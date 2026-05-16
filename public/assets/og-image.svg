@@ -1,0 +1,18 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#050508"/>
+      <stop offset="100%" style="stop-color:#0a0a1a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="200" cy="150" r="300" fill="#3b82f6" opacity="0.06"/>
+  <circle cx="1000" cy="480" r="250" fill="#8b5cf6" opacity="0.06"/>
+  <text x="600" y="280" font-family="-apple-system, sans-serif" font-size="120" font-weight="900" text-anchor="middle" fill="url(#accent)">Viora</text>
+  <text x="600" y="360" font-family="-apple-system, sans-serif" font-size="28" font-weight="400" text-anchor="middle" fill="rgba(255,255,255,0.4)" letter-spacing="8">SOFTWARE ENGINEER</text>
+  <text x="600" y="430" font-family="monospace" font-size="18" text-anchor="middle" fill="rgba(255,255,255,0.2)">viora.name</text>
+</svg>
