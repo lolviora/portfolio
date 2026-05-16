@@ -25,7 +25,7 @@ export function ExperienceSection() {
           {/* Vertical line */}
           <div className="absolute left-6 top-0 bottom-0 w-px bg-gradient-to-b from-blue-500/60 via-violet-500/40 to-transparent hidden md:block" />
 
-          {experiences.map((exp, index) => (
+          {experiences.map((exp) => (
             <motion.div
               key={exp.id}
               variants={slideLeftVariants}

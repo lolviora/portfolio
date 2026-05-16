@@ -258,7 +258,7 @@ export function GameSnake() {
     };
     window.addEventListener("keydown", handleKey);
     return () => window.removeEventListener("keydown", handleKey);
-  }, [gameOver]);
+  }, [gameOver, togglePause]);
 
   // Continuous RAF for food pulse animation
   useEffect(() => {
