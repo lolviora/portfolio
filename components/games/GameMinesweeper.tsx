@@ -1,5 +1,5 @@
 "use client";
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useCallback, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Bomb, Flag, Clock, Trophy, RotateCcw } from "lucide-react";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
@@ -78,7 +78,7 @@ export function GameMinesweeper() {
   const [status, setStatus] = useState<"idle" | "playing" | "won" | "lost">("idle");
   const [elapsed, setElapsed] = useState(0);
   const [bestTime, setBestTime] = useLocalStorage(config.highScoreKey, 9999);
-  const timerRef = { current: null as NodeJS.Timeout | null };
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const diff = minesweeperDifficulties[difficulty];
 

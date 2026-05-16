@@ -62,9 +62,9 @@ export function ExperienceSection() {
 
                 {/* Highlights */}
                 <ul className="space-y-1.5 mb-4">
-                  {exp.highlights.map((h, i) => (
+                  {exp.highlights.map((h, hi) => (
                     <motion.li
-                      key={i}
+                      key={hi}
                       variants={fadeUpVariants}
                       className="flex items-start gap-2 text-sm text-white/40"
                     >

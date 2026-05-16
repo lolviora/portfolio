@@ -232,14 +232,14 @@ export function GameSnake() {
     loopRef.current = setTimeout(tick, s.speed);
   }, [tick]);
 
-  const togglePause = () => {
+  const togglePause = useCallback(() => {
     if (gameOver) return;
     pausedRef.current = !pausedRef.current;
     setPaused(pausedRef.current);
     if (!pausedRef.current) {
       loopRef.current = setTimeout(tick, stateRef.current.speed);
     }
-  };
+  }, [gameOver, tick]);
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
